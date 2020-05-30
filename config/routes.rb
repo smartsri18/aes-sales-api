@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :products, params: :_id
   resources :invoices, params: :_id
   get 'entity/invoices', to: "invoices#show_based_on_entity"
+  root to: "application#welcome"
 end
